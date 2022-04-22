@@ -1,0 +1,10 @@
+call plug#begin('~/.config/nvim/autoload/plugged')
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'preservim/nerdtree'    
+	Plug 'ayu-theme/ayu-vim'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'mattn/emmet-vim'
+	Plug 'numToStr/Comment.nvim'
+call plug#end()
+lua require('Comment').setup()
