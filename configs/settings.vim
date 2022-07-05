@@ -20,7 +20,7 @@ set clipboard=unnamedplus
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
-highlight CursorLine guibg=#303000 ctermbg=234
+highlight CursorLine guibg=#474743 ctermbg=234
 
 "NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
