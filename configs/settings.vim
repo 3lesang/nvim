@@ -4,14 +4,7 @@ filetype plugin indent on
 
 autocmd BufEnter * :set scroll=10 " set croll line 
 syntax on
-
-
 set cursorline
-hi cursorline cterm=none term=none
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
-highlight CursorLine guibg=#303000 ctermbg=234
-
 set encoding=UTF-8
 set mouse=a " enable mouse trong context của neovim 
 set incsearch 
@@ -24,6 +17,10 @@ set number relativenumber
 set clipboard=unnamedplus
 
 
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#303000 ctermbg=234
 
 "NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -44,4 +41,3 @@ let g:airline_theme='ayu'
 
 "Emmet
 let g:user_emmet_leader_key=','
-
